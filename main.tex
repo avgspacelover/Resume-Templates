@@ -1,0 +1,307 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+%----------DO MARGIN ADJUSTMENT HERE---------------
+\usepackage[letterpaper,margin=1in]{geometry}
+%---------END OF MARGIN ADJUSTMENT-----------------
+\input{glyphtounicode}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand\fbox{\fcolorbox{gold(metallic)}{white}}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\definecolor{goldenpoppy}{rgb}{0.99, 0.76, 0.0}
+\definecolor{gold(metallic)}{rgb}{0.83, 0.69, 0.22}
+\definecolor{darkgoldenrod}{rgb}{0.72, 0.53, 0.04}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{darkgoldenrod}\titlerule \vspace{-5pt}]
+%"blue" is where you change section title colour
+%"red" is where you change underline rule colour
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\definecolor{darkcandyapplered}{rgb}{0.64, 0.0, 0.0}
+
+\begin{center}
+    \textbf{\Huge \scshape Vidya Dhopate} \\ \vspace{5pt} 
+    \small +91 xxxxx xxxxx $|$ \href{mailto:emailaddress@email.com}{\underline{emailaddress@email.com}} $|$ 
+    \href{https://www.linkedin.com/in}{\underline{linkedin.com/in}} $|$
+    \href{https://github.com/vidyawantstobattle}{\underline{github.com/vidyawantstobattle}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\smallskip
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Maharashtra Institute of Technology, Pune (MIT-WPU)}{\textbf{CGPA: 9.18}}
+      {Bachelor of Technology in Computer Science and Engineering}{July 2017 -- Present}\\
+    \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Data Warehousing and Data Mining, Big Data Analytics, Artificial Intelligence, Bioinformatics.}
+        \resumeItem{\textbf{Teaching Experience:} Co-hosted a 4-day computer vision basics workshop for teaching 59 students.}
+        \resumeItem{\textbf{Volunteering:} Explained an IoT project to underprivileged children through an exhibition arranged by college.}
+     
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Technical Intern}{\emph{Feb 2020 -- May 2020}}
+      {Company Name}{}
+      \resumeItemListStart
+        \resumeItem{Created the theory and lab material for the \textbf{Microservices} course and explored sub-domains within \textbf{Docker} and \textbf{Kubernetes}.}
+        \resumeItem{Acted as an assistant in delivering the Microservices course for the certified \textbf{corporate training} of the enrolled students by \textbf{demonstrating lab experiments} and solving doubts.}
+        \resumeItem{Created a \textbf{tool for HR Analytics} which uses Django framework to determine the MBTI Personality Type of an employee and automates scoring of recruitment candidates using Fuzzy TOPSIS.} 
+        \resumeItem {Collaborated with co-workers on IBM's \textbf{Employee Attrition dataset} to find patterns underlying poor performance by employees.}
+        \resumeItem{Authorized to be the \textbf{LinkedIn administrator} of the company's LinkedIn profile.}\hfill
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \smallskip
+    \resumeSubheading
+      {Project Management Intern}{\emph{Nov 2020 -- Present}}
+      {Company Name}{}
+      \resumeItemListStart
+        \resumeItem{Established logical flow of dialogue for development of an \textbf{Alexa skill} which acts as a medicine reminder.}
+        \resumeItem{Co-ordinate between two teams working on the Medicine Reminder project as the \textbf{team co-ordinator}}
+    
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Human Resource Intern}{\emph{June 2019}}
+      {Company Name}{}
+      \resumeItemListStart
+        \resumeItem{Learnt about the \textbf{welfare policies} of the company formulated for the workers.}
+        \resumeItem{Understood the worker \textbf{payroll and attendance} systems.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Project Highlights}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{HealthClick} $|$ \emph{Flask, Bootstrap, Dialogflow, MongoDB}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a telemedicine website using Flask and Bootstrap having multiple features.}
+            \resumeItem{Designed a feature for ordering medicines through the website having a MongoDB backend.}
+            \resumeItem{Implemented a dialogflow powered FAQ chatbot which answers questions related to the hospital and general health. [\href{add code link here}{\underline{Code Link}]}}
+            
+          \resumeItemListEnd
+          
+          
+      \resumeProjectHeading
+          {\textbf{HealthClick} $|$ \emph{Flask, Bootstrap, Dialogflow, MongoDB}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a telemedicine website using Flask and Bootstrap having multiple features.}
+            \resumeItem{Designed a feature for ordering medicines through the website having a MongoDB backend.}
+            \resumeItem{Implemented a dialogflow powered FAQ chatbot which answers questions related to the hospital and general health. [\href{}{\underline{Code Link}]}}
+          \resumeItemListEnd
+          
+          
+      \resumeProjectHeading
+          {\textbf{HealthClick} $|$ \emph{Flask, Bootstrap, Dialogflow, MongoDB}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a telemedicine website using Flask and Bootstrap having multiple features.}
+            \resumeItem{Designed a feature for ordering medicines through the website having a MongoDB backend.}
+            \resumeItem{Implemented a dialogflow powered FAQ chatbot which answers questions related to the hospital and general health. [\href{https://github.com/sdsg01/Health-Click}{\underline{Code Link}]}}
+            
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Museum Surveillance System} $|$ \emph{Python, openCV, Raspberry Pi, IoT}}{\emph{(Group Project)}}
+          \resumeItemListStart
+            \resumeItem{Integrated the hardware components comprising of camera, buzzer and IR sensor with the surveillance software using Raspberry Pi 3 for processing.}
+            \resumeItem{Employed openCV to operate on the feed received from the camera and detect suspicious activity.}
+            \resumeItem{Used python to automate the process of alerting museum authorities through an API. [\href{https://github.com/kg-0805/IOT-Mini-Project}{\underline{Code Link}]}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS------------------
+\section{Publications}
+\smallskip
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+    \textbf{Vidya Dhopate} and Vaibhav Bahel (2020); \textbf{IT Projects in Top 3 Smart Cities in India: Existing Solutions, Challenges and Discussions for Future Scope}; International Journal of Scientific and Research Publications (IJSRP) 10(11) (ISSN: 2250-3153), DOI : 10.29322/IJSRP.10.11.2020.p10741. \\
+    }}\href{http://www.ijsrp.org/research-paper-1120.php?rp=P10710704}\small{{\underline{[Paper Link]}}}
+\end{itemize}
+%-----------ONLINE COURSES----------------
+\section{MOOCs Key Learnings}
+\smallskip
+
+\resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Deep Learning Specialization} (5 Courses) $|$ {\textbf{deeplearning.ai} (Coursera)}}{}
+          
+          \resumeItemListStart
+            \resumeItem{\textbf{Neural Networks and Deep Learning:} Logistic Regression, Gradient Descent, Vectorization, Activation Functions, Forward \& Backward Propagation, Parameters vs Hyperparameters.}
+            \resumeItem{\textbf{Improving Deep Neural Networks: }Train/Dev/Test Splits, Bias \& Variance, Dropout Regularisation, Vanishing/Exploding Gradients, Mini-Batch Gradient Descent, Adam Optimization, Softmax Regression.}
+            \resumeItem{\textbf{Structuring Machine Learning Projects:} Avoidable Bias, Error Analysis, Transfer learning.}
+            \resumeItem{\textbf{Convolutional Neural Networks:} Edge Detection, Padding, Pooling Layers, ResNets, Bounding Boxes, Anchor Boxes, YOLO Algorithm, Triplet Loss, Neural Style Transfer.}
+            \resumeItem{\textbf{Sequence Models:} RNNs, GRUs, LSTMs, B-RNNs, Word Embeddings, Beam Search, Attention Model, Trigger Word Detection.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Introduction to Sustainability Course} $|$ \textbf{University of Ilinois (Urbana-Champaign)} (Coursera)}{}
+          \resumeItemListStart
+            \resumeItem{Growth Curves, Malthusian Catastrophes, Demographic Transitions, Population Pyramids, Tragedy of Commons, Oil \& Renewable Energy, Water trends, Agricultual limits, Negative Externalities, Biodiversity, Life Cycle Assessment.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    
+%----------CO-CURRICULARS-----------------
+\section{Co-Curriculars}
+
+\medskip
+    \resumeItemListStart
+        \resumeItem{\textbf{IEEE SheHacks Hackathon (2020)}
+        \\Ranked among the \textbf{Top 30}. Created a telemedicine website called HealthClick to be used by hospitals to enhance patient comfort and experience.}
+        \resumeItem{\textbf{Bhopal Smart City Hackathon 2.0 (2019)}
+        \\Ranked among the \textbf{Top 80}. Developed a project titled Smart Sadak which is a smart system that uses RFID tags for monitoring traffic and detecting traffic violations.}
+        \resumeItem{\textbf{Speaker Curator at TEDxMITWPU (since 2018)}
+        \\Communicated with distinguished personalities for giving a TEDx talk through the TEDxMITWPU club and helped them with the \textbf{drafting of the TEDx speeches}. Also helped in marketing and content writing departments.}
+        \resumeItem{\textbf{Core-Committee Organizer at Aananta Tantra club (since 2019)}
+        \\Organized \textbf{technical workshops} in college by being in-charge of marketing and content-writing. Helped workshop attendees set up environment for the workshops and answered their questions.}
+    \resumeItemListEnd
+
+
+
+
+%-----------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+\smallskip
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, JavaScript, SQL, MongoDB, LaTeX, HTML/CSS.} \\
+     \textbf{Frameworks}{: Node.js, React, Android Studio, Flask, Bootstrap, D3.js.} \\
+    % \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, Eclipse} \\
+     \textbf{Libraries}{: Keras, pandas, NumPy, Matplotlib, sci-kit learn, sci-kit image.}
+    }}
+ \end{itemize}
+
+%-----------EXTRA CURRICULARS-------------
+\section{Extra Curriculars}
+\smallskip
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Scuba Diving}{: Advanced Open Water(AOW) Certification by PADI.} \\
+     \textbf{Yoga}{: Practioner of yogic exercises, meditation and nutrition under a certified yoga teacher.} \\
+     \textbf{Dance}{: Student at the Dancing Curve Studio for Contemporary and Hip-Hop styles.}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
